@@ -11,8 +11,14 @@ This is my first Python game! I built it while learning to code.
 - Three difficulty levels
 - Smart hints (too high/too low)
 - Fun emoji feedback
+- hint system
+- winners scoring system
+- player greeting and name input message
 
 ## What I Learned
 - Python basics
 - Game logic
 - GitHub usage
+- functions
+- strip(), lower() methods
+- use return values 

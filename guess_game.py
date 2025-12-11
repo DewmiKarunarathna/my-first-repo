@@ -17,6 +17,9 @@ def show_logo():
   | |\  | |_| | | | | | | |_) |  __/ |      
   |_| \_|\__,_|_| |_| |_|_.__/ \___|_|      
     """)
+def save_score(name, score):
+    with open("Scores.txt","a") as f:
+        f.write(f"{name}: {score}\n")
 def replay():
     choice = input("⭐Do you want to play again(y/n): ").strip().lower()  #strip to remove spaces and lower to transform everything into lowercase
     if choice in ['y',"yes","yeah"]:
@@ -106,5 +109,6 @@ while True:
     if won:
         score = (1000-(attempt+1)*2)*max_num
         print(f"Your score is {score}! Well done ☺️")
+        save_score(name, score)
     if not replay():
         break

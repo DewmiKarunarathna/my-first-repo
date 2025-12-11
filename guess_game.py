@@ -1,5 +1,14 @@
 import random
 #function to re-play the game
+def instruction():
+    print("👾How to play")
+    print("1. Enter your name!")
+    print("2. Select difficluity : Easy | Medium | Hard ")
+    print("3. Guess the secret number")
+    print("4. Get hints if you're wrong")
+    print("4. Win within limited attempts!")
+    print("Good luck🤞🍀!")
+
 def replay():
     choice = input("⭐Do you want to play again(y/n): ").strip().lower()  #strip to remove spaces and lower to transform everything into lowercase
     if choice in ['y',"yes","yeah"]:
@@ -22,6 +31,13 @@ def hint(answer):
 score = 0        
 while True:
     print("🎮Guess the number game!")
+    number = int(input("Press 1 to instructions 🤔, any other key to enter to the game!"))
+    while True:
+        if number==1:
+            instruction()
+            break;
+        else:
+            break;
     name = greet()
     print(f"\n Hello {name}! Welcome to the number guessing game")
     print("Select difficulity......")

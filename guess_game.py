@@ -6,7 +6,7 @@ def instruction():
     print("2. Select difficluity : Easy | Medium | Hard ")
     print("3. Guess the secret number")
     print("4. Get hints if you're wrong")
-    print("4. Win within limited attempts!")
+    print("5. Win within limited attempts!")
     print("Good luck🤞🍀!")
 def show_logo():
     print(r"""
@@ -18,8 +18,22 @@ def show_logo():
   |_| \_|\__,_|_| |_| |_|_.__/ \___|_|      
     """)
 def save_score(name, score):
-    with open("Scores.txt","a") as f:
+    with open("Scores.txt","a") as f: #a means append the marks, and it creates a new text file if there is no such file like that
         f.write(f"{name}: {score}\n")
+#function to display high score
+def high_score():
+    try:
+        with open("Scores.txt","r") as f:  #r to mean reading values from the file
+            scores = f.readlines()
+            if scores:
+                print("\n" + "="*50)
+                print("           🏆 HIGH SCORES 🏆")
+                print("="*50)
+                for score in scores[-5:]:  # Show last 5
+                    print(f"  {score.strip()}")
+    except FileNotFoundError:
+        print("\nNo high scores yet! Be the first! 🎯")
+         
 def replay():
     choice = input("⭐Do you want to play again(y/n): ").strip().lower()  #strip to remove spaces and lower to transform everything into lowercase
     if choice in ['y',"yes","yeah"]:
@@ -28,7 +42,7 @@ def replay():
         return False
     else:
         print("Invalid input")
-        replay()
+        return replay()
 #greeting the player function
 def greet():
     name = input("Please enter your name: ").strip()
@@ -43,13 +57,11 @@ score = 0
 while True:
     print("🎮Guess the number game!")
     show_logo()
+    high_score()
     number = int(input("Press 1 to instructions 🤔, any other key to enter to the game!"))
-    while True:
-        if number==1:
-            instruction()
-            break;
-        else:
-            break;
+    if number==1:
+        instruction()
+        input("\n🎮 Press Enter to start the game! ") 
     name = greet()
     print(f"\n Hello {name}! Welcome to the number guessing game")
     print("Select difficulity......")
@@ -97,10 +109,10 @@ while True:
                     print(f"\n Too low 👇" , end=" ")
                 else:
                     print(f"\n Too high👆" , end=" ")
-                    if remaining > 0:
-                        print(f"\n Only {remaining} attempt{'s' if remaining > 1 else ''} remain! 😬")  
-                    else:
-                        print(f"\n Oh you've lost! The number was {answer} 😢😢")
+                if remaining > 0:
+                    print(f"\n Only {remaining} attempt{'s' if remaining > 1 else ''} remain! 😬")  
+                else:
+                    print(f"\n Oh you've lost! The number was {answer} 😢😢")
         except ValueError:
             print("❌ Please enter a valid number!")
     if not won and attempt == max_attempts :

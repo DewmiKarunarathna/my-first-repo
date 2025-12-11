@@ -14,6 +14,7 @@ This is my first Python game! I built it while learning to code.
 - hint system
 - winners scoring system
 - player greeting and name input message
+- add instruction function
 
 ## What I Learned
 - Python basics

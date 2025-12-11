@@ -8,7 +8,15 @@ def instruction():
     print("4. Get hints if you're wrong")
     print("4. Win within limited attempts!")
     print("Good luck🤞🍀!")
-
+def show_logo():
+    print(r"""
+   _   _                 _                  
+  | \ | |               | |                 
+  |  \| |_   _ _ __ ___ | |__   ___ _ __    
+  | . ` | | | | '_ ` _ \| '_ \ / _ \ '__|   
+  | |\  | |_| | | | | | | |_) |  __/ |      
+  |_| \_|\__,_|_| |_| |_|_.__/ \___|_|      
+    """)
 def replay():
     choice = input("⭐Do you want to play again(y/n): ").strip().lower()  #strip to remove spaces and lower to transform everything into lowercase
     if choice in ['y',"yes","yeah"]:
@@ -31,6 +39,7 @@ def hint(answer):
 score = 0        
 while True:
     print("🎮Guess the number game!")
+    show_logo()
     number = int(input("Press 1 to instructions 🤔, any other key to enter to the game!"))
     while True:
         if number==1:

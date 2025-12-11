@@ -17,6 +17,7 @@ This is my first Python game! I built it while learning to code.
 - add instruction function
 - added a logo to the game
 - add a score saving in a file system
+- display high scores
 
 ## What I Learned
 - Python basics

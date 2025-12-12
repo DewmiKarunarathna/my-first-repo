@@ -26,3 +26,4 @@ This is my first Python game! I built it while learning to code.
 - functions
 - strip(), lower() methods
 - use return values 
+  

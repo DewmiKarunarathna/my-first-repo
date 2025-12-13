@@ -26,4 +26,8 @@ This is my first Python game! I built it while learning to code.
 - functions
 - strip(), lower() methods
 - use return values 
-  
+## My rock paper scissors game
+- i used python random library to let the computer select rock, paper, scissor randomly
+- players can play against computer
+- wihtout tie marks, after the given playing attempts, if the player scores more than the computer, the player wins!
+- 

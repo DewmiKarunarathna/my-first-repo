@@ -49,6 +49,16 @@ def show_logo():
               └─────────────────────────────────────┘""")    
     print("Hello! Welcome to the Rock Paper Scissors game")
 choices = ["Rock 🪨", "Paper 📃","Scissor ✂️"]
+def replay(): #replay function
+    choice = input("⭐Do you want to play again(y/n): ").strip().lower() 
+    if choice in ['y',"yes","yeah"]:
+        return True
+    elif choice in ['n',"no","nope"]:
+        return False
+    else:
+        print("Invalid input")
+        return replay()
+
 while True:
     show_logo()
     instruction()
@@ -81,6 +91,7 @@ while True:
         print(f"You won ! Wow 🥳🥳🥳 Your score is {score_user}!")
     else:
         print(f"Awww you've lost! Better luck next time! 💔💔Your score is {score_user}!")
-    break;    
+    if not replay():
+        break
         
                 

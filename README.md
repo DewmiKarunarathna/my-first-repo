@@ -32,3 +32,4 @@ This is my first Python game! I built it while learning to code.
 - wihtout tie marks, after the given playing attempts, if the player scores more than the computer, the player wins!
 - i included a new function to let the player decide of having instructions or not
 - There is a new function, to let the user input their name = greeting message, i reused the code part from my above game code
+- added a function to save the name and the score of each user

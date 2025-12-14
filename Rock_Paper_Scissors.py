@@ -11,6 +11,9 @@ def ins2():
     print("Press 1 for rock 🪨")
     print("Press 2 for Paper 📃")
     print("Press 3 for Scissor ✂️")
+def greet():
+    name = input("Please enter your name: ").strip()
+    return name if name else "Player"    
 def game(choice,choices):
     computer_score = 0
     user_score = 0
@@ -42,6 +45,9 @@ def game(choice,choices):
     else:
         print("Oh no invalid input!")
     return computer_score, user_score    
+def save_score(name, score):
+    with open("Scores.txt","a") as f: #a means append the marks, and it creates a new text file if there is no such file like that
+        f.write(f"{name}: {score}\n")    
 def show_logo():
     print(r"""
     ┌─────────────────────────────────────┐
@@ -61,6 +67,8 @@ def replay(): #replay function
 
 while True:
     show_logo()
+    name = greet()
+    print(f"Hello {name} Welcome to Rock, Paper, Scissors game")
     replay_choice = int(input("Do you want instructions? Press 1 for instructions and any other key for continue!"))
     if replay_choice == 1:
         instruction()
@@ -93,6 +101,7 @@ while True:
         print(f"You won ! Wow 🥳🥳🥳 Your score is {score_user}!")
     else:
         print(f"Awww you've lost! Better luck next time! 💔💔Your score is {score_user}!")
+    save_score(name, score_user)    
     if not replay():
         break
         

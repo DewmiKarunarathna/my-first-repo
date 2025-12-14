@@ -61,7 +61,9 @@ def replay(): #replay function
 
 while True:
     show_logo()
-    instruction()
+    replay_choice = int(input("Do you want instructions? Press 1 for instructions and any other key for continue!"))
+    if replay_choice == 1:
+        instruction()
     print (choices)
     print("Select difficulity level 😤")
     print("1 - Easy 😊")

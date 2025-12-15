@@ -25,7 +25,8 @@ This is my first Python game! I built it while learning to code.
 - GitHub usage
 - functions
 - strip(), lower() methods
-- use return values 
+- use return values
+- time library : sleep(time) - can use to slower the time by giving a time less than 0
 ## My rock paper scissors game
 - i used python random library to let the computer select rock, paper, scissor randomly
 - players can play against computer

@@ -55,6 +55,12 @@ def show_logo():
               └─────────────────────────────────────┘""")    
     print("Hello! Welcome to the Rock Paper Scissors game")
 choices = ["Rock 🪨", "Paper 📃","Scissor ✂️"]
+def victory_celebration():
+    print(r"""
+       ✨✨✨✨✨✨✨✨✨✨✨
+    🏆   YOU ARE THE CHAMPION!   🏆
+       ✨✨✨✨✨✨✨✨✨✨✨
+    """)
 def replay(): #replay function
     choice = input("⭐Do you want to play again(y/n): ").strip().lower() 
     if choice in ['y',"yes","yeah"]:
@@ -99,6 +105,7 @@ while True:
         score_computer = score[0]
     if score_user >= score_computer :
         print(f"You won ! Wow 🥳🥳🥳 Your score is {score_user}!")
+        victory_celebration()
     else:
         print(f"Awww you've lost! Better luck next time! 💔💔Your score is {score_user}!")
     save_score(name, score_user)    

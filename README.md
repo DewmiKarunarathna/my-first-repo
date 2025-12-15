@@ -1,4 +1,4 @@
-# 🎮 My Number Guessing Game
+e# 🎮 My Number Guessing Game
 
 This is my first Python game! I built it while learning to code.
 
@@ -34,4 +34,4 @@ This is my first Python game! I built it while learning to code.
 - There is a new function, to let the user input their name = greeting message, i reused the code part from my above game code
 - added a function to save the name and the score of each user
 - added a loading function
-- 
+- enhanced to display outputs in a clear way

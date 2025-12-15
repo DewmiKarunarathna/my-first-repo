@@ -26,6 +26,7 @@ def game(choice,choices):
     user_score = 0
     waiting()
     computer_choice = random.choice(choices) 
+    print(computer_choice)
     try:
         choice = int(choice)
     except:

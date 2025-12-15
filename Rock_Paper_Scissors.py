@@ -25,8 +25,11 @@ def game(choice,choices):
     computer_score = 0
     user_score = 0
     waiting()
-    computer_choice = random.choice(choices) 
-    print(computer_choice)
+    computer_choice = random.choice(choices)
+    print("="*40)
+    print(f"Your choice : {choice}")
+    print(f"Computer choce: {computer_choice}")
+    print("="*40)
     try:
         choice = int(choice)
     except:
@@ -91,7 +94,7 @@ while True:
     print("Select difficulity level 😤")
     print("1 - Easy 😊")
     print("2 - Medium 😁")
-    print("2 - Hard 🤯")
+    print("3 - Hard 🤯")
     level = int(input("Enter level: "))
     chances = 0  
     score_user = 0

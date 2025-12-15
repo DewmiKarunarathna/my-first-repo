@@ -1,5 +1,6 @@
 #simple rock paper scissor game
 import random
+import time # adding time function
 def instruction():
     print("👾How to play")
     print("1. Enter your name!")
@@ -7,6 +8,12 @@ def instruction():
     print("3. Enter the right choice")
     print("4. Win within limited attempts!")
     print("Good luck🤞🍀!")
+def waiting():
+    print("Computer is thinking",end="")
+    for _ in range(3):
+        time.sleep(0.5)
+        print(".",end="",flush = True)
+    print()
 def ins2():
     print("Press 1 for rock 🪨")
     print("Press 2 for Paper 📃")
@@ -17,6 +24,7 @@ def greet():
 def game(choice,choices):
     computer_score = 0
     user_score = 0
+    waiting()
     computer_choice = random.choice(choices) 
     try:
         choice = int(choice)

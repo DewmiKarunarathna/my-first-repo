@@ -36,3 +36,5 @@ This is my first Python game! I built it while learning to code.
 - added a function to save the name and the score of each user
 - added a loading function
 - enhanced to display outputs in a clear way
+## Choose your adventure story game
+- entering to the game

@@ -38,3 +38,4 @@ This is my first Python game! I built it while learning to code.
 - enhanced to display outputs in a clear way
 ## Choose your adventure story game
 - entering to the game
+- added a show title function to display welcome message

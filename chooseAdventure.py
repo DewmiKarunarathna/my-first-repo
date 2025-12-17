@@ -1,5 +1,16 @@
 #choose your own adventure game
-#start 
+import time
+def show_title():
+    print_slow(r"""
+     _    _      _                           
+    | |  | |    | |                          
+    | |  | | ___| | ___ ___  _ __ ___   ___  
+    | |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \ 
+    \  /\  /  __/ | (_| (_) | | | | | |  __/ 
+     \/  \/ \___|_|\___\___/|_| |_| |_|\___| 
+    """)
+    print_slow("🎮 YOUR ADVENTURE BEGINS... 🎮")
+#start
 def start_adventure():
     print("🌲🌲🌲Forest Adventure🌲🌲🌲")
     print("You wake up in a mysterious forest 🫢")

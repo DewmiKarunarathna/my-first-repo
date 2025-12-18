@@ -39,3 +39,4 @@ This is my first Python game! I built it while learning to code.
 ## Choose your adventure story game
 - entering to the game
 - added a show title function to display welcome message
+- added cave functions 

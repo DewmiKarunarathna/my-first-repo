@@ -1,5 +1,11 @@
 #choose your own adventure game
 import time
+def print_slow(text, delay = 0.33):
+    """Print text with a typewriter effect"""
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()
 def show_title():
     print_slow(r"""
      _    _      _                           
@@ -19,12 +25,14 @@ def start_adventure():
         print("You are entering to a cave 😯")
         cave_choice = input("Would you walk into the cave? 🤯 y/n").lower()
         if cave_choice == ["y", "yes"]:
-            #
+            cave_in()
         else :
-            #
+            print("You decided to not to go in the cave, you turn arount and you see a glowing path")
+            print("🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟")
+            glow()
     else:
         print("You find a river 😯")
-        #continue
+        river()
 def turn():
     choice = input("Which way you want to go ? Left or right? 🤔").lower()
 def cave_in():
@@ -37,7 +45,8 @@ def cave_in():
     elif choice == 2:
         #
     else:
-                 
+def river():
+    #
                  
                  
     

@@ -52,6 +52,17 @@ def glowing_path():
     print("It leads to two different areas:")
     print("1. An ancient temple 🏛️")
     print("2. A hidden village 🏘️")    
-                 
-                 
+    while True:
+        try:
+            choice = int(input("Where do you go? (1/2) : "))
+            if choice == 1:
+                ancient_temple()
+                break
+            elif choice == 2:
+                hidden_village()
+                break
+            else:
+                print("Please enter 1 or 2")
+        except:
+            print("Enter a number")
     

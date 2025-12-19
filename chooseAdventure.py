@@ -46,7 +46,12 @@ def cave_in():
         #
     else:
 def river():
-    #
+def glowing_path():
+    print("\n✨✨✨ The Glowing Path ✨✨✨")
+    print("The path shimmers with magical energy!")
+    print("It leads to two different areas:")
+    print("1. An ancient temple 🏛️")
+    print("2. A hidden village 🏘️")    
                  
                  
     

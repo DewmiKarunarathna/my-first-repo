@@ -41,4 +41,5 @@ This is my first Python game! I built it while learning to code.
 - added a show title function to display welcome message
 - added cave functions
 - the turn function is created to print the left and right messages
-- completed functions
+- completed functions to select either go to cave or go back
+- added another function to go to a glowing village

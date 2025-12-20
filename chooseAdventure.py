@@ -29,7 +29,7 @@ def start_adventure():
         else :
             print("You decided to not to go in the cave, you turn arount and you see a glowing path")
             print("🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟")
-            glow()
+            glowing_path()
     else:
         print("You find a river 😯")
         river()
@@ -65,4 +65,5 @@ def glowing_path():
                 print("Please enter 1 or 2")
         except:
             print("Enter a number")
+
     

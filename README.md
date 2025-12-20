@@ -43,3 +43,4 @@ This is my first Python game! I built it while learning to code.
 - the turn function is created to print the left and right messages
 - completed functions to select either go to cave or go back
 - added another function to go to a glowing village, a function to go in a glowing path
+- the user can either find a torch in the backpack, or light a fire using the function

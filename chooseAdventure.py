@@ -41,9 +41,9 @@ def cave_in():
     print("Press 2 to light a fire ")
     choice = int(input("Your choice : ")
     if choice == 1:
-        #
+        print("You have found a torch 🔦")
     elif choice == 2:
-        #
+        print("You light a fire 🔥")
     else:
 def river():
 def glowing_path():

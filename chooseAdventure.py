@@ -40,12 +40,25 @@ def cave_in():
     print("Press 1 to search for a light in the backpack")
     print("Press 2 to light a fire ")
     choice = int(input("Your choice : ")
-    if choice == 1:
+    if choice == 1
         print("You have found a torch 🔦")
     elif choice == 2:
         print("You light a fire 🔥")
     else:
+def game_to_boat():
+    print("You have to correctly identify all 4 numbers in the lock 🔒")
+    print("First number is rhymes with tree 🌴")
+    print("Second number comes from (3y +5)3/2 = 21")
+    print("Last digits are the addition of first two digits times 2")
+    answer = input("Your answer is : ").lower()
+    if answer == "3312":
+        return True
+    else:
+        return False
 def river():
+    print("You are seeing a river, to get to the other side, you need to get a boat")
+    print("You have to open a lock to open the gate to get the boat ⛵")
+    game_to_boat()             
 def glowing_path():
     print("\n✨✨✨ The Glowing Path ✨✨✨")
     print("The path shimmers with magical energy!")

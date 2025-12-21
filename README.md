@@ -44,3 +44,4 @@ This is my first Python game! I built it while learning to code.
 - completed functions to select either go to cave or go back
 - added another function to go to a glowing village, a function to go in a glowing path
 - the user can either find a torch in the backpack, or light a fire using the function
+- if they go newar the river, to get to the other side, player has to open a lock

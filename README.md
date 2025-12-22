@@ -45,3 +45,4 @@ This is my first Python game! I built it while learning to code.
 - added another function to go to a glowing village, a function to go in a glowing path
 - the user can either find a torch in the backpack, or light a fire using the function
 - if they go newar the river, to get to the other side, player has to open a lock
+- door function is implemented and used turn function inside it to go left and right

@@ -47,3 +47,4 @@ This is my first Python game! I built it while learning to code.
 - the user can either find a torch in the backpack, or light a fire using the function
 - if they go newar the river, to get to the other side, player has to open a lock
 - door function is implemented and used turn function inside it to go left and right
+- The main idea of making this code is to get a proper idea on how functions work

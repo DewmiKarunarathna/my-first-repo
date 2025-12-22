@@ -26,6 +26,7 @@ def start_adventure():
         cave_choice = input("Would you walk into the cave? 🤯 y/n").lower()
         if cave_choice == ["y", "yes"]:
             cave_in()
+            
         else :
             print("You decided to not to go in the cave, you turn arount and you see a glowing path")
             print("🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟")
@@ -58,7 +59,13 @@ def game_to_boat():
 def river():
     print("You are seeing a river, to get to the other side, you need to get a boat")
     print("You have to open a lock to open the gate to get the boat ⛵")
-    game_to_boat()             
+    game_to_boat()   
+def ancient_temple():
+    print("This temple is hidden from the world,most of the people have been looking for it")
+    print("You have completed the challenge! 👑")
+def hidden_village():
+    print("This is the village where you can find the information about the ancient medicines.")
+    print("You have completed the challenge! 👑")
 def glowing_path():
     print("\n✨✨✨ The Glowing Path ✨✨✨")
     print("The path shimmers with magical energy!")

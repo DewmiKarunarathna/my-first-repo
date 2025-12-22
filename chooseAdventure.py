@@ -48,6 +48,7 @@ def cave_in():
     elif choice == 2:
         print("You light a fire 🔥")
     else:
+        print("Invalid input!")         
 def game_to_boat():
     print("You have to correctly identify all 4 numbers in the lock 🔒")
     print("First number is rhymes with tree 🌴")
@@ -74,7 +75,13 @@ def cave_out():
 def river():
     print("You are seeing a river, to get to the other side, you need to get a boat")
     print("You have to open a lock to open the gate to get the boat ⛵")
-    game_to_boat()   
+    game_to_boat()
+    if game_to_boat():
+        print("You came to your village !")
+    elif !game_to_boat():
+        print("You are trapped near the river!😨")
+    else:
+        print("Invalid input")         
 def ancient_temple():
     print("This temple is hidden from the world,most of the people have been looking for it")
     print("You have completed the challenge! 👑")

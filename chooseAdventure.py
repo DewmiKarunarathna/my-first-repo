@@ -26,6 +26,7 @@ def start_adventure():
         cave_choice = input("Would you walk into the cave? 🤯 y/n").lower()
         if cave_choice == ["y", "yes"]:
             cave_in()
+            door()
             
         else :
             print("You decided to not to go in the cave, you turn arount and you see a glowing path")
@@ -36,6 +37,7 @@ def start_adventure():
         river()
 def turn():
     choice = input("Which way you want to go ? Left or right? 🤔").lower()
+    return choice
 def cave_in():
     print("The cave is getting darker 😨")
     print("Press 1 to search for a light in the backpack")
@@ -56,6 +58,15 @@ def game_to_boat():
         return True
     else:
         return False
+def door():
+    print("You see two doors leading left and right")
+    turn()
+    if turn()=="left":
+        cave_out()
+    elif turn()=="right":
+        trap()
+    else:
+        print("Invalid input")
 def river():
     print("You are seeing a river, to get to the other side, you need to get a boat")
     print("You have to open a lock to open the gate to get the boat ⛵")

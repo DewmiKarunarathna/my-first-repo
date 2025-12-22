@@ -67,6 +67,10 @@ def door():
         trap()
     else:
         print("Invalid input")
+def trap():
+    print("You've got trapped 😨")
+def cave_out():
+    print("You have gotten out of the cave and returned to your village")
 def river():
     print("You are seeing a river, to get to the other side, you need to get a boat")
     print("You have to open a lock to open the gate to get the boat ⛵")

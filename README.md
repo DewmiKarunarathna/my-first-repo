@@ -38,6 +38,7 @@ This is my first Python game! I built it while learning to code.
 - enhanced to display outputs in a clear way
 ## Choose your adventure story game
 - entering to the game
+- this is more like a story game, creating your own story
 - added a show title function to display welcome message
 - added cave functions
 - the turn function is created to print the left and right messages
